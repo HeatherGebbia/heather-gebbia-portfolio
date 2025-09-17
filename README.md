@@ -7,7 +7,7 @@ A demo web application originally built in **VB.NET Web Forms** and migrated to 
 ---
 
 ## 🚀 Live Demo
-🔗 [Try the Application on Azure](https://customeragreement-cnefg9azggesbqhk.canadacentral-01.azurewebsites.net/)  
+🔗 [Try the Application on Azure](https://customeragreement-portfolio-fxhnd4d0b4avajcy.eastus2-01.azurewebsites.net/)  
 *(No authentication required — test/demo data only)*  
 
 ---
