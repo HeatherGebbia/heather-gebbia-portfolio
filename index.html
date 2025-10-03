@@ -114,23 +114,44 @@
 <body>
     <header>
         <h1>Heather Gebbia - Portfolio</h1>
-        <p>Software Engineer | Full Stack Developer | C# | ASP.NET | .NET Framework | SQL Server | JavaScript | jQuery | Azure | GitHub | VB.NET</p>
+        <p>Software Engineer | C# | VB.NET | ASP.NET | Razor | SQL Server | JavaScript | jQuery | Azure | GitHub</p>
     </header>
 
     <main>
         <section>
             <h2>Customer Agreement Web Application</h2>
             <p>
-                The <strong>Customer Agreement Web Application</strong> is a secure, web-based tool for managing customer agreements. Users can view and sign agreements efficiently, while Admin can customize questionnaires and monitor completed customer agreements. This project was originally developed in VB.NET Web Forms and has been rewritten in <strong>C# Web Forms</strong> to modernize the code and improve maintainability.
+                The <strong>Customer Agreement Web Application</strong> is a secure, web-based tool for managing customer agreements.
+                Users can view and sign agreements efficiently, while Admin can customize questionnaires and monitor completed agreements.
+                This project was originally developed in VB.NET Web Forms and has been rewritten in <strong>C# Web Forms</strong> to modernize the code.
+                I am now actively working on migrating the application to <strong>.NET Core with Razor Pages</strong> as part of my modernization journey.
             </p>
+
+            <!-- Completed C# Web Forms demo -->
+            <h3>C# Web Forms Version</h3>
             <p>
-    If you wish to view the Source Code, please email me at <a href="mailto:heathergebbia@gmail.com">heathergebbia@gmail.com</a> and let me know your GitHub username or email so I can add you as a collaborator to the private repository.
-</p>
+                This version is fully functional and deployed to Azure. It represents the first modernization phase from VB.NET Web Forms to C# Web Forms.
+            </p>
             <div class="button-group">
-                <a href="https://customeragreement-portfolio-fxhnd4d0b4avajcy.eastus2-01.azurewebsites.net/"
+                <a href="customeragreement-portfolio-fxhnd4d0b4avajcy.eastus2-01.azurewebsites.net"
                    class="button"
-                   target="_blank">Live Demo</a>
-                <a href="https://github.com/HeatherGebbia/CustomerQuestionnaireCSharp"
+                   target="_blank">Live Demo (Web Forms)</a>
+                <a href="https://github.com/HeatherGebbia/CustomerAgreement"
+                   class="button"
+                   target="_blank">View Source Code</a>
+            </div>
+
+            <!-- In-progress .NET Core Razor Pages demo -->
+            <h3>.NET Core Razor Pages Version (Work in Progress)</h3>
+            <p>
+                This is an in-progress modernization project where I am rebuilding the application using .NET Core Razor Pages.
+                The goal is to take advantage of cross-platform support, dependency injection, built-in identity, and other modern .NET features.
+            </p>
+            <div class="button-group">
+                <a href="customeragreement-razor-dpfmbmcagbhrgxdr.eastus2-01.azurewebsites.net"
+                   class="button"
+                   target="_blank">Live Demo (Razor Pages)</a>
+                <a href="https://github.com/HeatherGebbia/CustomerAgreements"
                    class="button"
                    target="_blank">View Source Code</a>
             </div>
@@ -149,11 +170,11 @@
 
         <section>
             <h2>Technologies Used</h2>
-            <p>C#, ASP.NET Web Forms, SQL Server, Microsoft Azure App Service, HTML, CSS, JavaScript, jQuery</p>
+            <p>C#, ASP.NET Web Forms, .NET Core, Razor, EF Core, SQL Server, Azure App Service, HTML, CSS, JavaScript, jQuery</p>
         </section>
 
         <section>
-            <h2>Screenshot of Questionnaire Manager</h2>
+            <h2>Screenshot of Questionnaire Manager (Web Forms Version)</h2>
             <div class="screenshots">
                 <img src="screenshots/questionnaire.png" alt="Questionnaire Manager Screenshot" />
             </div>
@@ -163,7 +184,8 @@
             <h2>Technical Highlights</h2>
             <ul>
                 <li>Migration from VB.NET to C# with improved maintainability</li>
-                <li>Azure deployment demonstrates real-world web app hosting</li>
+                <li>Azure deployment demonstrates real-world web app hosting and cloud migration</li>
+                <li>Migration from Web Forms to .NET Core with Razor Pages</li>
                 <li>Clean, modular code structure for easier review</li>
             </ul>
         </section>
@@ -171,7 +193,6 @@
         <section>
             <h2>Future Enhancements</h2>
             <ul>
-                <li>Migration to .NET Core with Razor Pages</li>
                 <li>Google authentication option for easier access</li>
                 <li>HTML Editor for style formatting questionnaires</li>
                 <li>Automated email notifications for agreement completions</li>
@@ -188,10 +209,6 @@
     </footer>
 </body>
 </html>
-
-
-
-
 
 
 
