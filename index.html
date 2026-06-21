@@ -123,21 +123,25 @@
             <p>
                 <strong>How to review in 5 minutes (for reviewers / hiring managers)</strong><br>                
                 <ul>
-                    <li>Open the <a href="https://customeragreement-portfolio-fxhnd4d0b4avajcy.eastus2-01.azurewebsites.net"
-                    target="_blank">Razor demo</a></li>
-                    <li>On the home page, click "Start Demo: Create a New Agreement"</li>
-                    <li>Fill out company/contact info and a few answers</li>
-                    <li>Save, then submit, and view the Detail page to see the stored agreement</li>
-                    <li>At the top of the home page, select Questionnaires from the Admin drop down to see how the Agreement Questionnaire is managed</li>
+                    <li>Launch the Razor Pages demo</li>
+<li>Create and submit a new Customer Agreement</li>
+<li>Review the completed submission from the Dashboard</li>
+<li>Open Admin → Questionnaires to view the questionnaire builder</li>
+<li>Edit Questions, Sections, Lists, and Questionnaire settings</li>
+<li>Preview the questionnaire and compare the administrative and customer experiences</li>
                 </ul>
             </p>
             <p>
-                <strong>Summary</strong><br>
-                The <strong>Customer Agreement Web Application</strong> is a secure, web-based tool for managing customer agreements.
-                Users can view and sign agreements efficiently, while Admin can customize questionnaires and monitor completed agreements.
-                This project was originally developed in VB.NET Web Forms and has been rewritten in <strong>C# Web Forms</strong> to modernize the code.
-                I am now actively working on migrating the application to <strong>.NET Core with Razor Pages</strong> as part of my modernization journey.
-            </p>
+    <strong>Summary</strong><br>
+    The <strong>Customer Agreement Web Application</strong> is a full-stack enterprise-style application for managing customer agreements and customizable questionnaires.
+
+    The project began as a VB.NET Web Forms application and was modernized in two phases:
+    first rewritten in C# Web Forms, then completely migrated to ASP.NET Core Razor Pages with Entity Framework Core and a REST API architecture.
+
+    Administrators can create and manage questionnaires, sections, questions, list values, and dependent questions. Customers can complete agreements, save drafts, submit finalized agreements, and review completed submissions.
+
+    The application is hosted in Microsoft Azure using Azure App Services and Azure SQL Database and demonstrates modern .NET development practices including API-driven architecture, feature flags, dependency injection, Entity Framework Core, and cloud deployment.
+</p>
 
             <!-- Completed C# Web Forms demo -->
             <h3>C# Web Forms Version</h3>
@@ -154,9 +158,11 @@
             </div>
 
             <!-- In-progress .NET Core Razor Pages demo -->
-            <h3>.NET Core Razor Pages Version</h3>
+           <h3>ASP.NET Core Razor Pages + REST API Version</h3>
             <p>
-                This is the modernized .NET Core Razor Pages version, fully functional and deployed to Azure. I continue to enhance it with additional admin features and automation. 
+                This is the fully modernized version of the application built with ASP.NET Core Razor Pages, Entity Framework Core, and a dedicated REST API layer.
+
+All questionnaire administration, agreement management, and reporting functionality has been migrated to API-driven architecture and deployed to Microsoft Azure.
             </p>
             <div class="button-group">
                 <a href="https://customeragreement-portfolio-fxhnd4d0b4avajcy.eastus2-01.azurewebsites.net"
@@ -194,39 +200,61 @@
         <section>
             <h2>Key Features</h2>
             <ul>
-                <li>Secure login with Microsoft authentication (currently disabled for demonstration purposes)</li>
-                <li>Dashboard to view signed agreements</li>
-                <li>Fully customizable Questionnaires for Customers</li>
-                <li>Dynamic forms for capturing customer agreements</li>
-                <li>Integrated with SQL Server for data storage</li>
-            </ul>
+    <li>Customizable questionnaire builder with Sections, Questions, Lists, and Dependent Questions</li>
+    <li>Agreement creation, draft saving, editing, submission, and review</li>
+    <li>Administrative dashboard for managing questionnaires and completed agreements</li>
+    <li>Search, filtering, and sorting of submitted agreements</li>
+    <li>REST API architecture powering both public and administrative functionality</li>
+    <li>Azure SQL Database integration using Entity Framework Core</li>
+    <li>Feature flags with API/Database fallback support</li>
+    <li>Azure App Service hosting and cloud deployment</li>
+</ul>
         </section>
 
         <section>
             <h2>Technologies Used</h2>
-            <p>C#, ASP.NET Web Forms, .NET Core, Razor, EF Core, SQL Server, Azure App Service, HTML, CSS, JavaScript, jQuery</p>
+            <p>C#, ASP.NET Core Razor Pages, REST APIs, Entity Framework Core, SQL Server, Azure SQL Database, Azure App Services, HTML, CSS, JavaScript, jQuery, Git, GitHub</p>
         </section>
 
         <section>
             <h2>Technical Highlights</h2>
             <ul>
-                <li>Designed and executed a phased modernization: VB.NET → C# Web Forms → .NET Core Razor Pages + EF Core, hosted on Azure.</li>
-                <li>Migration from VB.NET to C# with improved maintainability</li>
-                <li>Azure deployment demonstrates real-world web app hosting and cloud migration</li>
-                <li>Migration from Web Forms to .NET Core with Razor Pages</li>
-                <li>Clean, modular code structure for easier review</li>                
-            </ul>
+    <li>Executed a complete modernization project: VB.NET Web Forms → C# Web Forms → ASP.NET Core Razor Pages</li>
+    <li>Designed and implemented a REST API layer to support application functionality</li>
+    <li>Migrated administrative pages from direct database access to API-driven architecture</li>
+    <li>Implemented Entity Framework Core with DTO-based API communication</li>
+    <li>Added feature flag support allowing API rollout with database fallback</li>
+    <li>Designed reusable DTOs and controller endpoints for questionnaires, sections, questions, lists, notifications, and agreements</li>
+    <li>Deployed multiple Azure App Services and Azure SQL Database environments</li>
+    <li>Used Git and GitHub for source control and deployment workflows</li>
+</ul>
         </section>
 
         <section>
             <h2>Future Enhancements</h2>
             <ul>
-                <li>Google authentication option for easier access</li>
-                <li>HTML Editor for style formatting questionnaires</li>
-                <li>Automated email notifications for agreement completions</li>
-                <li>Excel download reports</li>
+                <ul>
+    <li>Microsoft Graph integration for automated email notifications</li>
+    <li>Rich text/HTML editor for questionnaire formatting</li>
+    <li>Export completed agreements to Excel</li>
+    <li>Role-based security and administrative permissions</li>
+    <li>Automated audit history and change tracking</li>
+</ul>
             </ul>
         </section>
+        <section>
+    <h2>Architecture Highlights</h2>
+
+    <ul>
+        <li>ASP.NET Core Razor Pages front-end</li>
+        <li>REST API backend using ASP.NET Core Controllers</li>
+        <li>Entity Framework Core data access layer</li>
+        <li>Azure SQL Database</li>
+        <li>Azure App Services hosting</li>
+        <li>DTO-based communication between UI and API</li>
+        <li>Feature flags supporting gradual migration from database access to APIs</li>
+    </ul>
+</section>
 <section>
             <h2>Testing info and Screenshots (Web Forms Version)</h2>
             <p><strong>Dashboard:</strong> List of completed Customer Agreements. Select the Admin tab to manage Questionnaires, then select Questionnaire Manager.</p>
