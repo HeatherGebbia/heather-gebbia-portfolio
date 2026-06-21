@@ -1,64 +1,177 @@
-# Portfolio
+# Customer Agreement Web Application
 
-# Customer Agreement Web Application  
+A full-stack customer agreement management system demonstrating a complete modernization journey from **VB.NET Web Forms** to **C# Web Forms** and finally to **ASP.NET Core Razor Pages with a REST API architecture**.
 
-A demo web application originally built in **VB.NET Web Forms** and migrated to **C# Web Forms** to modernize the codebase. This project is hosted on **Microsoft Azure** with a **SQL Server Database backend**, and serves as a portfolio piece to demonstrate my skills in C#, ASP.NET, and Azure.  
+The application allows administrators to create and manage customizable questionnaires while customers can create, save, submit, and review agreements. The solution is deployed to **Microsoft Azure** using **Azure App Services** and **Azure SQL Database**.
+
+This project serves as a portfolio piece showcasing modern .NET development, application modernization, API design, cloud deployment, and database-driven web applications.
 
 ---
 
 ## 🚀 Live Demo
-🔗 [Try the Application on Azure](https://customeragreement-portfolio-fxhnd4d0b4avajcy.eastus2-01.azurewebsites.net/)  
-*(No authentication required — test/demo data only)*  
 
----
-## Screenshot of Questionnaire Manager
-*(Easily manage questions, allowable answer types, conditional answers, etc.)* 
-![Questionnaire Manager](screenshots/questionnaire.png) 
+### Portfolio Landing Page
 
----
+🔗 https://customeragreement-portfolio-fxhnd4d0b4avajcy.eastus2-01.azurewebsites.net/
 
-## 📂 Repository  
-This repository contains the source code for the **C# version** of the Customer Agreement application.  
+> **Note:** The Azure SQL Database uses serverless auto-pause to reduce hosting costs. If the database is asleep, click **Wake Up Database** and wait approximately 15–30 seconds before launching the demos.
 
-- The original version was written in VB.NET.  
-- This repo highlights the **C# migration effort**.  
-- A future version is being rewritten in **.NET Core with Razor Pages** (coming soon).  
+### Available Demonstrations
+
+* Original C# Web Forms Version
+* Modernized ASP.NET Core Razor Pages + REST API Version
+
+*(No authentication required — demo/test data only.)*
 
 ---
 
-## ✨ Features  
-- Create and manage customer agreements  
-- Store and retrieve agreement data from Azure SQL Database  
-- Form validation and error handling  
-- Simple, clean UI with ASP.NET Web Forms  
+## 📂 Repository
+
+This repository contains the source code for the modernized **ASP.NET Core Razor Pages** version of the Customer Agreement application.
+
+### Modernization Timeline
+
+1. Original Application – VB.NET Web Forms
+2. Phase 1 – Migration to C# Web Forms
+3. Phase 2 – Migration to ASP.NET Core Razor Pages
+4. Phase 3 – Introduction of REST API Architecture
+5. Azure Deployment using App Services and Azure SQL Database
 
 ---
 
-## 🛠️ Technologies Used  
-- **C#** (migrated from VB.NET)  
-- **ASP.NET Web Forms**  
-- **Azure App Service** (hosting)  
-- **Azure SQL Database**  
-- **ADO.NET** for database access  
+## ✨ Features
+
+### Customer Features
+
+* Create customer agreements
+* Save agreements as drafts
+* Submit completed agreements
+* View submitted agreements
+* Dynamic questionnaire rendering
+* Conditional and dependent questions
+
+### Administrative Features
+
+* Manage questionnaires
+* Manage sections
+* Manage questions
+* Manage list values
+* Manage dependent questions
+* Manage notification templates
+* Preview questionnaires before publishing
+* Search, filter, and sort completed agreements
+
+### Technical Features
+
+* REST API architecture
+* DTO-based API communication
+* Entity Framework Core data access
+* Feature flags with API/database fallback support
+* Azure SQL Database integration
+* Azure App Service deployment
 
 ---
 
-## 🔐 Security Note  
-This repo does **not** include any sensitive information (connection strings, credentials, API keys).  
-- Connection strings are stored securely in **Azure App Service Application Settings**.  
-- The `web.config` file only includes a placeholder connection string.
-  
+## 🏗️ Architecture
+
+### Front End
+
+* ASP.NET Core Razor Pages
+* HTML
+* CSS
+* JavaScript
+* jQuery
+
+### API Layer
+
+* ASP.NET Core Web API
+* RESTful endpoints
+* DTO-based communication
+
+### Data Layer
+
+* Entity Framework Core
+* SQL Server
+* Azure SQL Database
+
+### Cloud Hosting
+
+* Azure App Services
+* Azure SQL Database
+* Azure App Settings
+* Azure Connection Strings
+
 ---
 
-## 📈 Future Enhancements  
-- Rewrite with **.NET Core Razor Pages** for a modernized architecture  
-- Add **Entity Framework Core** for database access  
-- Integrate **Azure DevOps pipelines** for CI/CD automation  
+## 🛠️ Technologies Used
+
+* C#
+* ASP.NET Core Razor Pages
+* ASP.NET Core Web API
+* Entity Framework Core
+* SQL Server
+* Azure SQL Database
+* Azure App Services
+* HTML
+* CSS
+* JavaScript
+* jQuery
+* Git
+* GitHub
 
 ---
 
-## 👩‍💻 About Me  
-This project is part of my developer portfolio.  
+## 🎯 Technical Highlights
 
-- 🔗 [View my Portfolio Website](https://heathergebbia.github.io/heather-gebbia-portfolio/)  
-- 💼 [Connect with me on LinkedIn](https://www.linkedin.com/in/heather-gebbia7)  
+* Executed a complete modernization project from VB.NET Web Forms → C# Web Forms → ASP.NET Core Razor Pages
+* Designed and implemented a REST API layer to support application functionality
+* Migrated administrative pages from direct database access to API-driven architecture
+* Implemented Entity Framework Core with DTO-based API communication
+* Added feature flags supporting API rollout with database fallback
+* Designed reusable DTOs and controller endpoints for questionnaires, sections, questions, lists, notifications, and agreements
+* Deployed multiple Azure App Services and Azure SQL Database environments
+* Used Git and GitHub for source control and deployment workflows
+
+---
+
+## 🔐 Security Note
+
+This repository does **not** contain any sensitive information.
+
+* Connection strings are stored in Azure App Service Configuration
+* Development secrets are stored using User Secrets
+* API configuration values are stored outside source control
+* No credentials, API keys, or production secrets are committed to GitHub
+
+---
+
+## 📈 Future Enhancements
+
+* Microsoft Graph integration for automated email notifications
+* Rich text/HTML editor for questionnaire formatting
+* Export completed agreements to Excel
+* Role-based authorization
+* Audit history and change tracking
+* CI/CD deployment pipeline using Azure DevOps or GitHub Actions
+
+---
+
+## 👩‍💻 About Me
+
+This project is part of my software development portfolio and demonstrates experience with:
+
+* Application modernization
+* ASP.NET Core development
+* REST API design
+* Entity Framework Core
+* Azure cloud deployment
+* SQL Server development
+
+### Portfolio
+
+🔗 https://heathergebbia.github.io/heather-gebbia-portfolio/
+
+### LinkedIn
+
+💼 https://www.linkedin.com/in/heather-gebbia7
+
